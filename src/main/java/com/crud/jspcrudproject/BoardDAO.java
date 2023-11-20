@@ -5,8 +5,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
-import com.crud.jspcrudproject.BoardVO;
-import com.crud.jspcrudproject.JDBCUtil;
 
 public class BoardDAO {
 	
@@ -14,8 +12,8 @@ public class BoardDAO {
 	PreparedStatement stmt = null;
 	ResultSet rs = null;
 
-	private final String BOARD_INSERT = "insert into BOARD (title, writer, content) values (?,?,?)";
-	private final String BOARD_UPDATE = "update BOARD set title=?, writer=?, content=? where seq=?";
+	private final String BOARD_INSERT = "insert into BOARD (category, title, writer, content) values (?,?,?,?)";
+	private final String BOARD_UPDATE = "update BOARD set category=?, title=?, writer=?, content=? where seq=?";
 	private final String BOARD_DELETE = "delete from BOARD  where seq=?";
 	private final String BOARD_GET = "select * from BOARD  where seq=?";
 	private final String BOARD_LIST = "select * from BOARD order by seq desc";
@@ -25,9 +23,10 @@ public class BoardDAO {
 		try {
 			conn = JDBCUtil.getConnection();
 			stmt = conn.prepareStatement(BOARD_INSERT);
-			stmt.setString(1, vo.getTitle());
-			stmt.setString(2, vo.getWriter());
-			stmt.setString(3, vo.getContent());
+			stmt.setString(1, vo.getCategory());
+			stmt.setString(2, vo.getTitle());
+			stmt.setString(3, vo.getWriter());
+			stmt.setString(4, vo.getContent());
 			stmt.executeUpdate();
 			return 1;
 		} catch (Exception e) {
@@ -53,13 +52,14 @@ public class BoardDAO {
 		try {
 			conn = JDBCUtil.getConnection();
 			stmt = conn.prepareStatement(BOARD_UPDATE);
-			stmt.setString(1, vo.getTitle());
-			stmt.setString(2, vo.getWriter());
-			stmt.setString(3, vo.getContent());
-			stmt.setInt(4, vo.getSeq());
+			stmt.setString(1, vo.getCategory());
+			stmt.setString(2, vo.getTitle());
+			stmt.setString(3, vo.getWriter());
+			stmt.setString(4, vo.getContent());
+			stmt.setInt(5, vo.getSeq());
 			
 			
-			System.out.println(vo.getTitle() + "-" + vo.getWriter() + "-" + vo.getContent() + "-" + vo.getSeq());
+			System.out.println(vo.getCategory() + "-" + vo.getTitle() + "-" + vo.getWriter() + "-" + vo.getContent() + "-" + vo.getSeq());
 			stmt.executeUpdate();
 			return 1;
 			
@@ -79,6 +79,7 @@ public class BoardDAO {
 			rs = stmt.executeQuery();
 			if(rs.next()) {
 				one.setSeq(rs.getInt("seq"));
+				one.setCategory(rs.getString("category"));
 				one.setTitle(rs.getString("title"));
 				one.setWriter(rs.getString("writer"));
 				one.setContent(rs.getString("content"));

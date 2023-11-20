@@ -15,11 +15,11 @@ public class JDBCUtil {
 	    return con;  
 	}  
 	
-	public static void main(String ars[]) {
-		Connection conn = getConnection();
-		if(conn != null)
-			System.out.println("DB 연결됨!");
-		else
-			System.out.println("DB 연결중 오류 !");
-	}
+//	public static void main(String ars[]) {
+//		Connection conn = getConnection();
+//		if(conn != null)
+//			System.out.println("DB 연결됨!");
+//		else
+//			System.out.println("DB 연결중 오류 !");
+//	}
 }
