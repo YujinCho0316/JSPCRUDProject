@@ -770,8 +770,8 @@ p233_22100708|schema||p233_22100708||UPDATE|G</Grants>
       <CollationName>utf8_general_ci</CollationName>
     </schema>
     <schema id="237" parent="1" name="p233_22100708">
-      <IntrospectionTimestamp>2023-11-18.01:21:58</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-11-17.07:22:00</LocalIntrospectionTimestamp>
+      <IntrospectionTimestamp>2023-11-20.22:34:48</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-11-20.04:34:49</LocalIntrospectionTimestamp>
       <CollationName>utf8_general_ci</CollationName>
     </schema>
     <user id="238" parent="1" name="p233_22100708"/>
@@ -792,7 +792,7 @@ p233_22100708|schema||p233_22100708||UPDATE|G</Grants>
       <CollationName>utf8_general_ci</CollationName>
     </table>
     <column id="243" parent="239" name="seq">
-      <AutoIncrement>5</AutoIncrement>
+      <AutoIncrement>8</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -821,7 +821,7 @@ p233_22100708|schema||p233_22100708||UPDATE|G</Grants>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <column id="249" parent="239" name="readcnt">
+    <column id="249" parent="239" name="cnt">
       <DasType>int(11)|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <Position>7</Position>

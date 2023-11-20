@@ -69,8 +69,31 @@ public class BoardDAO {
 		return 0;
 	}	
 	
+//	public BoardVO getBoard(int seq) {
+//		BoardVO one = new BoardVO();
+//		System.out.println("===> JDBC로 getBoard() 기능 처리");
+//		try {
+//			conn = JDBCUtil.getConnection();
+//			stmt = conn.prepareStatement(BOARD_GET);
+//			stmt.setInt(1, seq);
+//			rs = stmt.executeQuery();
+//			if(rs.next()) {
+//				one.setSeq(rs.getInt("seq"));
+//				one.setCategory(rs.getString("category"));
+//				one.setTitle(rs.getString("title"));
+//				one.setWriter(rs.getString("writer"));
+//				one.setContent(rs.getString("content"));
+//				one.setCnt(rs.getInt("cnt"));
+//			}
+//			rs.close();
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//		return one;
+//	}
+
 	public BoardVO getBoard(int seq) {
-		BoardVO one = new BoardVO();
+		BoardVO one = null;
 		System.out.println("===> JDBC로 getBoard() 기능 처리");
 		try {
 			conn = JDBCUtil.getConnection();
@@ -78,6 +101,7 @@ public class BoardDAO {
 			stmt.setInt(1, seq);
 			rs = stmt.executeQuery();
 			if(rs.next()) {
+				one = new BoardVO();
 				one.setSeq(rs.getInt("seq"));
 				one.setCategory(rs.getString("category"));
 				one.setTitle(rs.getString("title"));
@@ -102,6 +126,7 @@ public class BoardDAO {
 			while(rs.next()) {
 				BoardVO one = new BoardVO();
 				one.setSeq(rs.getInt("seq"));
+				one.setCategory(rs.getString("category"));
 				one.setTitle(rs.getString("title"));
 				one.setWriter(rs.getString("writer"));
 				one.setContent(rs.getString("content"));
@@ -114,5 +139,11 @@ public class BoardDAO {
 			e.printStackTrace();
 		} 
 		return list;
+	}
+
+	public String getImgFilename(int i) {
+		String filename = "";
+
+		return filename;
 	}
 }

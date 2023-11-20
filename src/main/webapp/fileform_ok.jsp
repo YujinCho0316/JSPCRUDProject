@@ -28,6 +28,7 @@ fileform_ok.jsp 페이지 입니다.
     filename = multpartRequest.getFilesystemName("img1");
 %>
 파일명: <%=filename%><br>
+물리적 저장 경로: <%=realPath%><br>
 <img src="${pageContext.request.contextPath}/upload/<%=filename%>">
 </body>
 </html>
