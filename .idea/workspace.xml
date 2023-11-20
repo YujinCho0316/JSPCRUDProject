@@ -9,17 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e445cda-13c8-4335-967d-0ec43a950658" name="Changes" comment="Update the fields, modify related files, and connect to Datebase">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/crud/jspcrudproject/FileUpload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4ce5b8fa-1a6d-471c-8507-fd43814c1d6b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4ce5b8fa-1a6d-471c-8507-fd43814c1d6b.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4ce5b8fa-1a6d-471c-8507-fd43814c1d6b/storage_v2/_src_/schema/p233_22100708.K1fmKA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4ce5b8fa-1a6d-471c-8507-fd43814c1d6b/storage_v2/_src_/schema/p233_22100708.K1fmKA.meta" afterDir="false" />
+    <list default="true" id="5e445cda-13c8-4335-967d-0ec43a950658" name="Changes" comment="Add and Update FileUpload Class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/crud/jspcrudproject/BoardDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crud/jspcrudproject/BoardDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/addpost.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addpost.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/deletepost.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/deletepost.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/editpost.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editpost.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fileform_ok.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/fileform_ok.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/posts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/posts.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crud/jspcrudproject/BoardVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crud/jspcrudproject/BoardVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crud/jspcrudproject/FileUpload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crud/jspcrudproject/FileUpload.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +170,7 @@
       <workItem from="1699948556513" duration="1071000" />
       <workItem from="1700152639895" duration="2270000" />
       <workItem from="1700204636246" duration="4587000" />
-      <workItem from="1700450720977" duration="8268000" />
+      <workItem from="1700450720977" duration="8916000" />
     </task>
     <task id="LOCAL-00001" summary="Add jsp files and java files">
       <option name="closed" value="true" />
@@ -194,15 +188,35 @@
       <option name="project" value="LOCAL" />
       <updated>1700451443187</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add and Update FileUpload Class">
+      <option name="closed" value="true" />
+      <created>1700465854933</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700465854933</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add jsp files and java files" />
     <MESSAGE value="Update the fields, modify related files, and connect to Datebase" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update the fields, modify related files, and connect to Datebase" />
+    <MESSAGE value="Add and Update FileUpload Class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add and Update FileUpload Class" />
   </component>
 </project>

@@ -11,6 +11,8 @@ public class BoardVO {
 	private int cnt;
 	private String category;
 	private Date moddate;
+
+	private String img;
 	
 	public int getSeq() {
 		return seq;
@@ -59,6 +61,14 @@ public class BoardVO {
 	}
 	public void setCategory(String category) {
 		this.category = category;
+	}
+
+	public String getImg() {
+		return img;
+	}
+
+	public void setImg(String img) {
+		this.img = img;
 	}
 
 }

@@ -27,7 +27,7 @@ public class FileUpload {
             // 파일 업로드 처리 과정
             multipartRequest = new MultipartRequest(request, realPath, sizeLimit, "utf-8", new DefaultFileRenamePolicy());
 
-            filename = multipartRequest.getFilesystemName("img1");
+            filename = multipartRequest.getFilesystemName("img");
 
             one = new BoardVO();
             String seq = multipartRequest.getParameter("seq");
@@ -52,7 +52,7 @@ public class FileUpload {
                     filename = oldfilename;
             }
 
-            one.setimg(filename);
+            one.setImg(filename);
 
         } catch (IOException e) {
             e.printStackTrace();

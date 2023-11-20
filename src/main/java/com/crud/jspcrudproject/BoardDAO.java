@@ -3,6 +3,7 @@ package com.crud.jspcrudproject;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -141,9 +142,20 @@ public class BoardDAO {
 		return list;
 	}
 
-	public String getImgFilename(int i) {
+	public String getImgFilename(int seq) {
 		String filename = "";
+		try {
+			conn = JDBCUtil.getConnection();
+			stmt = conn.prepareStatement(BOARD_GET);
+			stmt.setInt(1,seq);
+			rs = stmt.executeQuery();
+			if(rs.next())
+				filename = rs.getString("img");
+			rs.close();
+		} catch (SQLException e) {
+            e.printStackTrace();
+        }
 
-		return filename;
+        return filename;
 	}
 }
