@@ -104,6 +104,7 @@ public class BoardDAO {
 			if(rs.next()) {
 				one = new BoardVO();
 				one.setSeq(rs.getInt("seq"));
+				one.setImg(rs.getString("img"));
 				one.setCategory(rs.getString("category"));
 				one.setTitle(rs.getString("title"));
 				one.setWriter(rs.getString("writer"));
@@ -155,7 +156,7 @@ public class BoardDAO {
 		} catch (SQLException e) {
             e.printStackTrace();
         }
-
+		System.out.println("===> JDBC로 getImgFileName() 기능 처리");
         return filename;
 	}
 }

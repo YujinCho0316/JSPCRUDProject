@@ -2,7 +2,6 @@ package com.crud.jspcrudproject;
 
 import com.oreilly.servlet.MultipartRequest;
 import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
-import sun.util.calendar.BaseCalendar;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.File;
@@ -31,14 +30,14 @@ public class FileUpload {
 
             one = new BoardVO();
             String seq = multipartRequest.getParameter("seq");
-            if(seq != null && !seq.equals(""))
+            if (!(seq != null && !seq.equals("")))
                 one.setSeq(Integer.parseInt(seq));
             one.setCategory(multipartRequest.getParameter("category"));
             one.setTitle(multipartRequest.getParameter("title"));
             one.setWriter(multipartRequest.getParameter("writer"));
             one.setContent(multipartRequest.getParameter("content"));
-            String cnt = multipartRequest.getParameter("cnt");
-            one.setCnt(Integer.parseInt(cnt));
+            //String cnt = multipartRequest.getParameter("cnt");
+            //one.setCnt(Integer.parseInt(cnt));
            // String regdate = multipartRequest.getParameter("regdate");
            // one.setRegdate(BaseCalendar.Date.);
            // one.setModdate(multipartRequest.getParameter("moddate"));
@@ -50,10 +49,12 @@ public class FileUpload {
                     FileUpload.deleteFile(request, oldfilename);
                 else if(filename == null && oldfilename != null)
                     filename = oldfilename;
+                else if(oldfilename == null) {
+                    one.setImg(filename);
+                    return one;
+                }
             }
-
             one.setImg(filename);
-
         } catch (IOException e) {
             e.printStackTrace();
         }

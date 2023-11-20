@@ -14,6 +14,7 @@
 	BoardDAO boardDAO = new BoardDAO();
 	FileUpload upload = new FileUpload();
 	BoardVO u = upload.uploadImg(request);
+
 	int i = boardDAO.insertBoard(u);
 	String msg = "데이터 추가 성공 !";
 	if(i == 0) msg = "[에러] 데이터 추가 ";
