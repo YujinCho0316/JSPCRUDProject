@@ -6,16 +6,16 @@
 
 <% request.setCharacterEncoding("utf-8"); %>
 
-<%--<jsp:useBean id="u" class="com.crud.jspcrudproject.BoardVO" />--%>
-<%--<jsp:setProperty property="*" name="u"/>--%>
+<jsp:useBean id="u" class="com.crud.jspcrudproject.BoardVO" />
+<jsp:setProperty property="*" name="u"/>
 
 <%
 	request.setCharacterEncoding("utf-8");
 	BoardDAO boardDAO = new BoardDAO();
 	FileUpload upload = new FileUpload();
-	BoardVO u = upload.uploadImg(request);
+	BoardVO vo = upload.uploadImg(request);
 
-	int i = boardDAO.insertBoard(u);
+	int i = boardDAO.insertBoard(vo);
 	String msg = "데이터 추가 성공 !";
 	if(i == 0) msg = "[에러] 데이터 추가 ";
 %>

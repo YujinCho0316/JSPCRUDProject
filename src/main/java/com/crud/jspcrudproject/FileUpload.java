@@ -30,7 +30,7 @@ public class FileUpload {
 
             one = new BoardVO();
             String seq = multipartRequest.getParameter("seq");
-            if (!(seq != null && !seq.equals("")))
+            if (seq != null && !seq.equals(""))
                 one.setSeq(Integer.parseInt(seq));
             one.setCategory(multipartRequest.getParameter("category"));
             one.setTitle(multipartRequest.getParameter("title"));

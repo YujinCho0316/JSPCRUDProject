@@ -9,14 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e445cda-13c8-4335-967d-0ec43a950658" name="Changes" comment="Update BoardDAO for file uploading">
+    <list default="true" id="5e445cda-13c8-4335-967d-0ec43a950658" name="Changes" comment="Create FileUpload.java and update some file for file uploading">
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/crud/jspcrudproject/BoardDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crud/jspcrudproject/BoardDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/crud/jspcrudproject/FileUpload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crud/jspcrudproject/FileUpload.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/addpost.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addpost.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/addpostform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addpostform.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/editform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editform.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fileform_ok.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/fileform_ok.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editpost.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editpost.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/posts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/posts.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -90,6 +91,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "configurable.group.language",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -174,7 +176,7 @@
       <workItem from="1699948556513" duration="1071000" />
       <workItem from="1700152639895" duration="2270000" />
       <workItem from="1700204636246" duration="4587000" />
-      <workItem from="1700450720977" duration="16102000" />
+      <workItem from="1700450720977" duration="21153000" />
     </task>
     <task id="LOCAL-00001" summary="Add jsp files and java files">
       <option name="closed" value="true" />
@@ -208,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700466469369</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Create FileUpload.java and update some file for file uploading">
+      <option name="closed" value="true" />
+      <created>1700482143701</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700482143701</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,7 +240,8 @@
     <MESSAGE value="Update the fields, modify related files, and connect to Datebase" />
     <MESSAGE value="Add and Update FileUpload Class" />
     <MESSAGE value="Update BoardDAO for file uploading" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update BoardDAO for file uploading" />
+    <MESSAGE value="Create FileUpload.java and update some file for file uploading" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create FileUpload.java and update some file for file uploading" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -239,6 +250,16 @@
           <url>file://$PROJECT_DIR$/src/main/webapp/addpost.jsp</url>
           <line>15</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/editpost.jsp</url>
+          <line>15</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/crud/jspcrudproject/FileUpload.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
