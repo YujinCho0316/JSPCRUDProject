@@ -48,8 +48,8 @@
 <table id="list" width="90%">
 <tr>
 	<th>Id</th>
-	<th>Img</th>
 	<th>Category</th>
+	<th>Img</th>
 	<th>Title</th>
 	<th>Writer</th>
 	<th>Content</th>
@@ -60,10 +60,10 @@
 <c:forEach items="${list}" var="u">
 	<tr>
 		<td>${u.getSeq()}</td>
-		<td><c:if test="${u.getImg() ne ''}"><br>
-			<img src="${pageContext.request.contextPath }/upload/${u.getImg()}" class="img" width="50px" height="50px"></c:if>
-		</td>
 		<td>${u.getCategory()}</td>
+		<td><c:if test="${u.getImg() ne ''}"><br>
+			<img src="${pageContext.request.contextPath }/upload/${u.getImg()}" class="img" width="50px"></c:if>
+		</td>
 		<td><a href="view.jsp?seq=${u.getSeq()}">${u.getTitle()}<a/></td>
 		<td>${u.getWriter()}</td>
 		<td>${u.getContent()}</td>

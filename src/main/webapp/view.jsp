@@ -32,7 +32,7 @@
         </tr>
         <tr>
             <td>Img:</td><td>
-            <c:if test="${vo.getImg() ne ''}"><br><img src="${pageContext.request.contextPath}/upload/${vo.getImg()}" class="img"> </c:if><td/>
+            <c:if test="${vo.getImg() ne ''}"><br><img src="${pageContext.request.contextPath}/upload/${vo.getImg()}" class="img" width="500px"> </c:if><td/>
         </tr>
         <tr>
             <td>Title</td><td>${vo.getTitle()}</td>
