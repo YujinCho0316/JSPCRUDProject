@@ -6,15 +6,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Edit Form</title>
+	<meta charset="UTF-8">
+	<title>Edit Form</title>
+	<link rel="stylesheet" href="board.css">
 </head>
 <body>
 
 <%
 	BoardDAO boardDAO = new BoardDAO();
-	String id=request.getParameter("id");	
-	BoardVO u=boardDAO.getBoard(Integer.parseInt(id));
+	String seq=request.getParameter("seq");
+	BoardVO u=boardDAO.getBoard(Integer.parseInt(seq));
 	request.setAttribute("u",u);
 %>
 

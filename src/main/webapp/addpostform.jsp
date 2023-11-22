@@ -4,8 +4,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+    <title>Post Upload page</title>
+    <link rel="stylesheet" href="board.css">
 </head>
 <body>
 

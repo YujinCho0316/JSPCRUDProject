@@ -67,4 +67,8 @@ public class FileUpload {
         File f = new File(filePath + "/" + filename);
         if (f.exists()) f.delete();
     }
+
+    public static void main(String ars[]) {
+
+    }
 }

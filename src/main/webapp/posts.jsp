@@ -61,14 +61,14 @@
 	<tr>
 		<td>${u.getSeq()}</td>
 		<td><c:if test="${u.getImg() ne ''}"><br>
-			<img src="${pageContext.request.contextPath }/upload/${u.getImg()}" class="img"></c:if>
+			<img src="${pageContext.request.contextPath }/upload/${u.getImg()}" class="img" width="50px" height="50px"></c:if>
 		</td>
 		<td>${u.getCategory()}</td>
-		<td>${u.getTitle()}</td>
+		<td><a href="view.jsp?seq=${u.getSeq()}">${u.getTitle()}<a/></td>
 		<td>${u.getWriter()}</td>
 		<td>${u.getContent()}</td>
 		<td>${u.getRegdate()}</td>
-		<td><a href="editform.jsp?id=${u.getSeq()}">Edit</a></td>
+		<td><a href="editform.jsp?seq=${u.getSeq()}">Edit</a></td>
 		<td><a href="javascript:delete_ok('${u.getSeq()}')">Delete</a></td>
 	</tr>
 </c:forEach>

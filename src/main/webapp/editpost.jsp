@@ -16,5 +16,5 @@
 	BoardVO vo = upload.uploadImg(request);
 
 	int i=boardDAO.updateBoard(vo);
-	response.sendRedirect("posts.jsp");
+	response.sendRedirect("p.jsostsp");
 %>
